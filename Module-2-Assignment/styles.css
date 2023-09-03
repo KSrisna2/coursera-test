@@ -1,0 +1,113 @@
+/* styles.css */
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    /*background-color: #333;*/
+    color: black;
+    text-align: center;
+    padding: 20px 0;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 80px;
+    padding: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.section {
+    background-color: grey;
+    margin: 20px;
+    flex: 1;
+    padding: 20px;
+    position: relative;
+}
+
+.section-title-chicken {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background-color: orange;
+    color: black;
+    padding: 5px 10px;
+    font-weight: bold;
+    margin-right: auto;
+}
+
+.section-title-beef {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background-color: darkred;
+    color: white;
+    padding: 5px 10px;
+    font-weight: bold;
+    margin-right: auto;
+}
+.section-title-sushi {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background-color: lightyellow;
+    color: black;
+    padding: 5px 10px;
+    font-weight: bold;
+    margin-right: auto;
+}
+
+/* Media Queries */
+@media screen and (max-width: 767px) {
+   .container {
+        flex-direction: column;
+    }
+    .section {
+        width: 100%;
+    }
+}
+
+@media screen and (min-width: 768px) and (max-width: 991px) {
+    .container {
+        flex-direction: column;
+    }
+    .section:nth-child(1),
+    .section:nth-child(2) {
+        width: 50%;
+    }
+    /*.section {
+        width: calc(50% - 20px); 
+    }*/
+    .sushi {
+        width: 100%; /* Sushi takes up the entire second row */
+        margin-top: 10px; /* Add margin to separate the rows */
+    }
+}
+    /*.container {
+        flex-direction: column;
+    }
+    /*.section:{
+        border: 10px solid darkred;
+        float: left;  
+    }*/
+    .section:nth-child(1) {
+        width: 50%;
+    }
+    .section:nth-child(2) {
+        width: 50%;
+    }
+    .section:nth-child(3) {
+        width: 100%;
+    }*/
+}
+
+@media screen and (min-width: 992px) {
+    .section {
+        width: calc(33.33% - 20px);
+    }
+}
