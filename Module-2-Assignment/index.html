@@ -3,89 +3,24 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Responsive Web Page</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-        }
-
-        header {
-            background-color: #333;
-            color: white;
-            text-align: center;
-            padding: 20px 0;
-        }
-
-        .container {
-            max-width: 1200px;
-            margin: 0 auto;
-            padding: 20px;
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: space-between;
-        }
-
-        .section {
-            background-color: #f1f1f1;
-            margin: 10px;
-            flex: 1;
-            padding: 20px;
-            position: relative;
-        }
-
-        .section-title {
-            position: absolute;
-            top: 10px;
-            right: 10px;
-            background-color: #333;
-            color: white;
-            padding: 5px 10px;
-            font-weight: bold;
-        }
-
-        /* Media Queries */
-        @media screen and (max-width: 767px) {
-            .section {
-                width: 100%;
-            }
-        }
-
-        @media screen and (min-width: 768px) and (max-width: 991px) {
-            .container {
-                flex-direction: column;
-            }
-            .section {
-                width: 100%;
-            }
-            .section:nth-child(3) {
-                margin-top: 10px;
-            }
-        }
-
-        @media screen and (min-width: 992px) {
-            .section {
-                width: calc(33.33% - 20px);
-            }
-        }
-    </style>
+    <title>Assignment Solution for Module 2</title>
+    <link rel="stylesheet" href="styles.css"> <!-- Link to the external CSS file -->
 </head>
 <body>
     <header>
-        <h1>Responsive Web Page</h1>
+        <h1>Our Menu</h1>
     </header>
     <div class="container">
         <div class="section">
-            <div class="section-title">Chicken</div>
+            <div class="section-title-chicken">Chicken</div>
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam viverra lectus et urna bibendum, eu aliquam ex aliquam.</p>
         </div>
         <div class="section">
-            <div class="section-title">Beef</div>
+            <div class="section-title-beef">Beef</div>
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam viverra lectus et urna bibendum, eu aliquam ex aliquam.</p>
         </div>
-        <div class="section">
-            <div class="section-title">Sushi</div>
+        <div class="section sushi">
+            <div class="section-title-sushi">Sushi</div>
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam viverra lectus et urna bibendum, eu aliquam ex aliquam.</p>
         </div>
     </div>
